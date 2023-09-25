@@ -27,4 +27,5 @@ git config --gloobal user.name <name>
     - `staging area`에 올라간 파일들의 스냅샷을 찍어서 `.git directory`에 저장
     - 일반적으로 `-m` 옵션을 넣어서 메세지를 추가하여 등록
 
-
+- `log` 
+    - `log`가 길 경우 q 눌러서 나오면 됨
