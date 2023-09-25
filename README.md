@@ -4,6 +4,6 @@
 
 ---
 
-- [**Git**](https://github.com/0choki0/TIL/blob/master/Git)
-- [**Linux**](https://github.com/0choki0/TIL/blob/master/Linux)
-- [**Markdown**](https://github.com/0choki0/TIL/blob/master/Markdown)
+- [**Git**](https://github.com/0choki0/TIL/tree/master/Git)
+- [**Linux**](https://github.com/0choki0/TIL/tree/master/Linux)
+- [**Markdown**](https://github.com/0choki0/TIL/tree/master/Markdown)
