@@ -17,7 +17,7 @@ git config --gloobal user.name <name>
 
 - `status`
     - `git status` : 현재 git으로 관리되고있는 파일/폴더의 상태를 출력
-
+    
 - `add`
     - `git add <file/folder name>` : working directory에서 `staging area`로 추가 
     - `git add .` : 모든 파일, 폴더를 추가하기 위해 사용하는 코드
@@ -27,4 +27,4 @@ git config --gloobal user.name <name>
     - `staging area`에 올라간 파일들의 스냅샷을 찍어서 `.git directory`에 저장
     - 일반적으로 `-m` 옵션을 넣어서 메세지를 추가하여 등록
 
-    
+
