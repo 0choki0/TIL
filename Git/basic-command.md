@@ -20,7 +20,7 @@ git config --gloobal user.name <name>
     - `git status` : 현재 git으로 관리되고있는 파일/폴더의 상태를 출력
     
 - `add`
-    - `git add <file/folder name>` : working directory에서 `staging area`로 추가 
+    - `git add <file/folder name>/` : working directory에서 `staging area`로 추가 
     - `git add .` : 모든 파일, 폴더를 추가하기 위해 사용하는 코드
 
 - `commit`
@@ -29,7 +29,7 @@ git config --gloobal user.name <name>
     - 일반적으로 `-m` 옵션을 넣어서 메세지를 추가하여 등록
 
 - `log` 
-    - `log`가 길 경우 q 눌러서 나오면 됨
+    - q를 누르면 log에서 나올 수 있다.
 
 
 
