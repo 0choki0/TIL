@@ -1,8 +1,9 @@
 # basic command
-> git 기본 문법 정리
+
+> Git의 basic 문법을 학습해보자
 
 ## 초기 설정
-- git을 설치 후 한번만 실행
+- 다음의 과정은 git을 설치 후 한번만 실행하면 된다.
 ```bash
 git config --global user.email <email>
 git config --gloobal user.name <name>
@@ -41,3 +42,5 @@ git config --gloobal user.name <name>
 - `push`
     - `git push <원격저장소이름> <브랜치이름>`
     - 원격저장소에 브랜치를 업로드
+
+

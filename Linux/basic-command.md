@@ -1,6 +1,6 @@
 # basic command
 
-리눅스의 basic 문법을 학습해보자
+Linux의 basic 문법을 학습해보자
 
 - `pwd` (print working directory)
 
