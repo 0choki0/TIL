@@ -1,9 +1,8 @@
 # basic command
-
-> Git의 basic 문법을 학습해보자
+> git 기본 문법 정리
 
 ## 초기 설정
-- 다음의 과정은 git을 설치 후 한번만 실행하면 된다.
+- git을 설치 후 한번만 실행
 ```bash
 git config --global user.email <email>
 git config --gloobal user.name <name>
@@ -20,7 +19,7 @@ git config --gloobal user.name <name>
     - `git status` : 현재 git으로 관리되고있는 파일/폴더의 상태를 출력
     
 - `add`
-    - `git add <file/folder name>/` : working directory에서 `staging area`로 추가 
+    - `git add <file/folder name>` : working directory에서 `staging area`로 추가 
     - `git add .` : 모든 파일, 폴더를 추가하기 위해 사용하는 코드
 
 - `commit`
@@ -29,7 +28,7 @@ git config --gloobal user.name <name>
     - 일반적으로 `-m` 옵션을 넣어서 메세지를 추가하여 등록
 
 - `log` 
-    - q를 누르면 log에서 나올 수 있다.
+    - `log`가 길 경우 q 눌러서 나오면 됨
 
 
 
@@ -42,5 +41,3 @@ git config --gloobal user.name <name>
 - `push`
     - `git push <원격저장소이름> <브랜치이름>`
     - 원격저장소에 브랜치를 업로드
-
-
