@@ -1,10 +1,9 @@
 # TIL
 
 > Today I learned
-> 오늘 배운 내용을 복습하고 정리해봅시다.
 
 ---
 
-- Git
-- Linux
-- Mardown
+- [**Git**](https://github.com/0choki0/TIL/blob/master/Git)
+- [**Linux**](https://github.com/0choki0/TIL/blob/master/Linux)
+- [**Markdown**](https://github.com/0choki0/TIL/blob/master/Markdown)
