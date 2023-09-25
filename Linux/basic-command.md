@@ -1,7 +1,6 @@
 # basic command
-> 리눅스 기본 명령어 정리
 
-ctrl + l (clear terminal 단축키)
+리눅스의 basic 문법을 학습해보자
 
 - `pwd` (print working directory)
 
@@ -26,3 +25,7 @@ ctrl + l (clear terminal 단축키)
 - `rm`
     - `rm <flie name>` : 파일 이름에 해당하는 파일 삭제
     - `rm -r <folder name>` : 폴더 이름에 해당하는 폴더 삭제
+
+---
+
+CLI를 익히면 어느 상황에서든 명령을 할 수 있다. CLI를 익혀서 원리를 안다면 GUI가 없다하더라도 원하는 바를 수행할 수 있다. CLI 사용에 익숙해지자.

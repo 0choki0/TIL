@@ -40,7 +40,7 @@
 
 - **Blockquote**
 
-    Blockquote는 인용구를 적용합니다. 구문은 `>` 입니다.
+    Blockquote는 인용구를 적용한다. 구문은 `>` 이다.
 
     >blockquote
     
@@ -50,7 +50,7 @@
 
 - **Order/Unorder List**
 
-    리스트 작성에 사용합니다. 구문은 `n. / -` 입니다.
+    리스트 작성에 사용한다. 구문은 `n. / -` 이다.
 
     1. frist item
     2. second item
@@ -70,7 +70,7 @@
 
 - **Code**
 
-    Code는 코드를 보여주는 역할을 합니다. 구문은 ``입니다. 각 backtick 사이에 메세지를 입력합니다.
+    Code는 코드를 보여주는 역할을 한다. 구문은 ``입니다. 각 backtick 사이에 메세지를 입력한다.
 
     `code`
     >'code'
@@ -79,7 +79,7 @@
 
 - **Horizontal  Rule**
 
-    Horizontal Rule은 구역을 나누는 역할을 합니다. 구문은 `--- `입니다.
+    Horizontal Rule은 구역을 나누는 역할을 한다. 구문은 `--- `이다.
 
     a
     ---
@@ -92,7 +92,7 @@
 
 - **Link**
 
-    Link는 텍스트에 URL주소를 입력할 수 있게 해줍니다. 구문은 `[title](URL)` 입니다.
+    Link는 텍스트에 URL주소를 입력할 수 있게 해준다. 구문은 `[title](URL)` 이다.
     
     [Google](https://google.com)
     > `[Google](https://google.com)`
@@ -101,7 +101,7 @@
 
 - **Image**
 
-    Image는 이미지를 입력할 수 있게 해줍니다. 구문은 `![alt text](image.jpg)` 입니다. 대괄호에 이미지 이름을 적고, 소괄호에 이미지의 주소를 입력하면 됩니다. 다음의 예시는 구글의 인터넷 주소에서 가져온 이미지와 local에서 가져온 이미지 입니다.
+    Image는 이미지를 입력할 수 있게 해준다. 구문은 `![alt text](image.jpg)` 이다. 대괄호에 이미지 이름을 적고, 소괄호에 이미지의 주소를 입력하면 된다. 다음의 예시는 구글의 인터넷 주소에서 가져온 이미지와 local에서 가져온 이미지이다.
 
     <br>
 
@@ -118,7 +118,7 @@
 
 - **Fenced Code Block**
 
-    Fenced Code Block은 프로그래밍 언어를 표시해줍니다. 하이라이트가 적용되어 보기 쉽게 표현되는 장점이 있습니다.
+    Fenced Code Block은 프로그래밍 언어를 표시해준다. 하이라이트가 적용되어 보기 쉽게 표현되는 장점이 있다.
 
 <br>
 
@@ -145,4 +145,4 @@ console.log('hello')
 
 ---
 
-오늘 배운 Markdown의 basic command는 위의 것들이다. 이를 이용해서 
+오늘 배운 Markdown의 basic command는 위의 것들이다. 앞으로 이를 활용하여 여러 작업을 수행해보도록 하자.
