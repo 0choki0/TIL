@@ -36,11 +36,28 @@ git config --gloobal user.name <name>
 ## 원격저장소에 업로드하기
 
 - `remote add`
-    - `git remote add <원격저장소이름> <URL>`
-    - 원격저장소 주소를 <원격저장소이름> 이라는 이름으로 저장
+    - `git remote add <원격저장소이름> <URL>`  
+    &nbsp; : 원격저장소 주소를 <원격저장소이름> 이라는 이름으로 저장
 
 - `push`
-    - `git push <원격저장소이름> <브랜치이름>`
-    - 원격저장소에 브랜치를 업로드
+    - `git push <원격저장소이름> <브랜치이름>`  
+    &nbsp; : 원격저장소에 브랜치를 업로드
+
+
+## 원격저장소에서 가져오기
+
+- `pull`
+    - `git pull <원격저장소이름> <브랜치이름>`  
+    &nbsp; : 원격저장소에 등록된 브랜치를 다운로드
+
+- `clone`
+    - `git clone <복사할 주소>`  
+    &nbsp; : 원격저장소에 등록된 브랜치를 로컬에 가져와서 새로이 폴더를 만듬.  
+    &nbsp; clone을 위해서 TERMINAL에서 git clone을 입력한다. 
+    &nbsp; &nbsp; `clone`을 할 경우 인지되어있는 저장소에서 브랜치를 가져온 것이기 때문에 따로 remote나 init을 할 필요가 없다.
+
+- `fork`  
+    git에 올라와있는 code가 public이 아니면, 로컬에서 push하거나 pull 할 수 없다. 따라서 새로이 code를 clone 해야한다. 이를 fork라 한다.
+
 
 
