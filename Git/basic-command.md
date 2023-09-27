@@ -75,17 +75,26 @@ git config --gloobal user.name <name>
     - Repository에서 *pull request*로 들어가서 메세지와 함께 pull request를 생성한다. 
     - request를 받은 사용자는 code review, merge 등을 수행한다.
 
-## Branch
+## Branch  
+&nbsp; `branch`는 code를 복사하고 원래의 code와는 상관없이 *독립적으로 개발을 진행*할 수 있게 도와주는 기능을 한다.  
 
-- ***조회***
+- ***조회***  
+&nbsp; `git branch` : 현재 브랜치의 위치를 확인할 수 있다.  
+&nbsp; `git branch -a` : 로컬 브래친와 원격저장소의 브랜치를 전부 확인할 수 있다.  
 
-- ***생성***
+- ***생성***  
+&nbsp; `git branch <name>` : name의 이름으로 branch를 현재 head에 생성한다.  
 
-- ***이동***
+- ***이동***  
+&nbsp; `git switch <branch name>` : 해당 브랜치로 이동한다.  
+&nbsp; `git switch -c <branch name>` : 해당 브랜치를 생성하면서 브랜치로 이동한다.  
 
-- ***삭제***
+- ***삭제***  
+&nbsp; `git branch -d <branch name>` : 브랜치를 지우지만, 해당 브랜치를 지울 경우 문제가 생기면 error가 난다.  
+&nbsp; `git branch -D <branch name>` : 브랜치를 지운다.  
 
-- ***병합***
+- ***병합***  
+&nbsp; `git merge <branch name>` : 현재의 브랜치에 해당 브랜치(branch name)을 병합한다.  
 
 - ***Rebase***
 
