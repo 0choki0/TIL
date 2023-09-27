@@ -123,3 +123,18 @@ calendar.prompt(year, month)
 from calendar import prompt #모든 calendar를 사용하는 코드에 from을 적용하려면 import 뒤에 *을 입력하면 된다.
 prompt(year, month)
 ```
+
+- requests  
+&nbsp; requests는 파이썬에서 HTTP를 사용하기 위해 쓰여지는 라이브러리이다.
+    - status  
+    : request의 상태를 나타낸다. 흔히 아는 *404 not found*에서 404가 코드명이고 not found가 상태이다. 코드명에 따른 상태는 [이곳](https://github.com/psf/requests/blob/c45a4dfe6bfc6017d4ea7e9f051d6cc30972b310/requests/status_codes.py)에서 확인할 수 있다.  
+
+    - get
+    : get method로 데이터를 보내는 법은 다음과 같다.
+    ```python
+    import requests
+    # URL에 데이터를 입력해서 전송한다.
+    URL = "<데이터 주소>"
+    res = requests.get
+    print(res.status_code)
+    ```
