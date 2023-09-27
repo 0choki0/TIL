@@ -95,7 +95,9 @@ git config --gloobal user.name <name>
 
 - ***병합***  
 &nbsp; `git merge <branch name>` : 현재의 브랜치에 해당 브랜치(branch name)을 병합한다.  
+&nbsp; `git merge --no-ff <branch name>` : log에 병합 이력을 남기고 싶으면 이를 이용하면 된다. 
 
-- ***Rebase***
+- ***Rebase***  
+&nbsp; `git rebase <branch name>` : branch의 base를 변경해서 다른 branch에서 commit한 내역을 최신으로 보고 그대로 끌어오는 식으로 합친다. git history를 깔끔하게 정리하는데 유용하지만 히스토리를 지우기 때문에 데이터 유실 등의 문제가 일어날 수 있다.
 
 
