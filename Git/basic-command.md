@@ -31,6 +31,8 @@ git config --gloobal user.name <name>
 - `log` 
     - q를 누르면 log에서 나올 수 있다.
 
+## git에서 관리하지 않을 파일 등록하기
+- `gitignore.io`에서 운영체제, 개발 환경, 프로그래밍 언어에 맞는 `.gitignore` 파일을 파일이 위치한 폴더에 생성한다.
 
 
 ## 원격저장소에 업로드하기
