@@ -40,11 +40,44 @@
 
 ## 1. 변수
 
+<변수이름> = <값>
+- <변수이름>은 어떤 이름이든 상관없음
+- 영어, 숫자, `_` 를 이용하여 선언
+- 키워드는 사용불가 ex) True, False ....
+
 ### 1.1 number
 
+- int
+: 정수
+
+```python
+a = 10
+type(a)
+```
+
+- float
+: 실수
+```python
+b = 1.1
+type(b)
+```
+
+- complex
+: 복소수, real은 실수부분 / imag는 허수부분
+
+```python
+c = 1.1-4j
+type(c)
+c.real
+c.image
+```
+
 ### 1.2 boolean
+: `True`, `False`로 이루어진 변수 타입이다.  
+- **0**은 **False**를 나타낸다.
 
 ### 1.3 none
+: 데이터가 없음을 의미한다.
 
 ### 1.4 string
 
