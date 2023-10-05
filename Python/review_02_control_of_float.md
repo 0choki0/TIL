@@ -91,7 +91,112 @@ else:
     grade = 'F'
 
 print(m1, grade, m2, message)
+```
+### 조건표현식
+```python
+true_value if <조건식> else false_value
+```
+- 아래의 두 코드는 완전히 동일한 코드이다.
 
+```python
+if 1 < 2:
+    print('True')
+else:
+    print('False')
+```
+> True
 
+```python
+print('True') if 1 <2 else print('False')
+```
+> True
+
+```python
+#다만 한줄로 적은 코드는 하나의 값으로 취급할 수 있다는 점에서 여러 줄의 코드와 차이를 보인다.
+num = 5
+value = num if num >= 0 else 0 
+print(value)
+```
+> value
+
+## 반복문
+: 반복 실행을 하는 명령어이다.
+### while문
+*범위가 지정되어 있지 않는 것이 for문과 차이점이다.*
+```python
+    while <조건식>:
+        실행할 코드
 ```
 
+```python
+a = 0
+
+while a < 5:
+    print(a, end = '')
+    a += 1
+```
+> 01234
+
+### for문
+*범위가 지정되어 있는 것이 while문과 차이점이다.*
+```python
+    for vaiable in sequence:
+        실행할 코드
+```
+
+```python
+numbers = [1, 2, 3, 4, 5] #구조형 자료(list)
+
+for number in numbers: #자료를 가져다 씀(범위가 지정되어 있음)
+    print(number, end = '')
+```
+> 12345
+
+- **practice** : 1~30까지 숫자 중에서 홀수를 모아서 리스트로 출력해보자
+
+```python
+my_list = []
+
+for i in range(1, 31):
+    if i % 2 == 1:
+        my_list.append(i)
+
+print(my_list)
+
+```
+> [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
+
+- **practice2** : 자료에 따라 범위 변경하기(len)
+
+```python
+menus = ['라면', '김밥', '떡볶이', '돈까스']
+for menu in range(len(menus)):
+    print(menus[menu], end = ', ')
+```
+> 라면,김밥,떡볶이,돈까스,
+
+- **enumerate** : 구조형 자료의 원소에 순서값을 부여해주는 함수.
+
+```python
+my_list = ['a', 'b', 'c']
+for i in enumerate(my_list):
+    print(i)
+```
+>(0, 'a')  
+(1, 'b')  
+(2, 'c')
+
+```python
+my_list = ['a', 'b', 'c']
+for i, l in enumerate(my_list):
+    print(i, l)
+```
+>0 a  
+1 b  
+2 c
+
+### dictionary 반복
+1. for key in dict:
+2. for key in dict.keys():
+3. for value in dict.valuse():
+4. for key, value in dict.item():
