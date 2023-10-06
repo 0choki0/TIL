@@ -201,12 +201,89 @@ for i, l in enumerate(my_list):
 3. for value in dict.valuse():
 4. for key, value in dict.item():
 
+**- for key in dict:**  
+&nbsp;&nbsp;&nbsp;: dictionary에 저장된 key를 순서대로 반복한다.  
+**- for key in dict.keys():**  
+&nbsp;&nbsp;&nbsp;: dictionary의 **key**값만을 추출한다.  
+**- for value in dict.valuse():**  
+&nbsp;&nbsp;&nbsp;: dictionary의 **value**값만 추출한다.  
+**- for key, value in dict.item():**  
+&nbsp;&nbsp;&nbsp;: dictionary의 **key값과 value값을 모두** 추출한다.
+
 #### break
+: 반복문을 종료시키는 키워드
+
+```python
+# 0~99까지 반복하는 코드에서 i 가 10이 넘을 경우 반복을 종료 시키게 하는 break 작성
+for i in range(100):
+    print(i)
+    if i > 10:
+        print('over 10!!')
+        break
+```
+> over 10!!
 
 #### continue
+: continue 이후의 코드를 실행하지 않고 다음 반복을 실행
+
+```python
+# 1~9까지 반복하는 코드에서 짝수만을 출력하도록 continue 작성
+for i in range(1, 10):
+    if i % 2: # i를 2로 나눈 나머지가 True일 경우
+        continue # 다음 반복문을 진행
+    
+    print(i, end='')
+
+```
+> 2468
 
 #### else
+: break를 만나지 않은 경우 반복이 진행된 후 실행
+```python
+# numbers를 반복하다가 4를 만나면 target을 출력하는 코드
+
+numbers = [1, 2, 3, 4, 5]
+target = 4
+
+for i in numbers:
+    if i != target:
+        continue
+    else:
+        print('target')
+
+```
+>target
 
 #### pass
+: 코드 블럭을 임의로 완성시킴
+```python
+#임시로 오류가 생기지 않게 코드 블럭을 처리하는 용도. 주석으로 대체해도 됨.
+if True:
+    pass
+```
 
 ### match
+: 입력값에 따라 다른 코드를 실행하게 해줌
+```python
+match value:
+    case 조건:
+        실행할 코드
+    case 조건:
+        실행할 코드
+    case _: #상기 조건 이외의 경우
+        실행할 코드
+
+```
+
+```python
+#상태가 400, 404 등등 상태에 따라 다른 실행을 하는 match 코드
+status = 404
+match status:
+    case 400:
+        print('bad request')
+    case 404:
+        print('not found')
+    case _:
+        print('something is wrong')  # 위의 case 외의 경우
+    
+```
