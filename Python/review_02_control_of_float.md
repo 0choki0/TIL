@@ -200,3 +200,13 @@ for i, l in enumerate(my_list):
 2. for key in dict.keys():
 3. for value in dict.valuse():
 4. for key, value in dict.item():
+
+#### break
+
+#### continue
+
+#### else
+
+#### pass
+
+### match
