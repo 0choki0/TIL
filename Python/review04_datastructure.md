@@ -429,8 +429,51 @@ print(fruits)
 
 # map, filter, zip
 
+## map(function, iterable)
+: 반복가능한 객체(iterable)를 받아서, 각 요소에 적용해준다.
 
+```python
+a = [1, 2, 3]
+number_str = map(str, a) 
+print(list(number_str))
+```
+>['1', '2', '3']
 
+```python
+# 함수를 정의하여서 사용하기
+def cube(x):
+    return x ** 3
+
+a = [1, 2, 3]
+result = map(cube, a)
+print(list(result))
+```
+>[ 1, 8, 27]
+
+## filter(function, iterable)
+: 특정 조건으로 걸러서 걸러진 요소들로 iterator객체를 만들어서 리턴해준다. 함수의 결과 T/F에 따라 해당 요소를 포함할지 결정한다.
+
+```python
+#주어진 리스트에서 홀수만 출력하기
+def is_odd(x): 
+    return bool(x % 2) # 홀수를 반환하는 함수
+numbers = [1, 2, 3, 4, 5]
+
+result = filter(is_odd, numbers) 
+print(list(result))
+```
+>[1, 3, 5]
+
+## zip
+: 여러 개의 iterable을 입력으로 받아서, 해당 인덱스에 위치한 항목들을 묶어 새로운 iterable로 반환한다.
+
+```python
+a = [1, 2, 3, 4]
+b = [100, 200, 300, 400, 500]
+reuslt = zip(a, b)
+print(list(result))
+```
+>[(1, 100), (2, 200), (3, 300), (4, 400)]
 
 
 
