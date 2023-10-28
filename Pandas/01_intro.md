@@ -90,25 +90,66 @@ s['b':'d']
 ```
 
 ### DataFrame
-: 2차원 데이터 구조. 행(row)과 열(column)로 구성되어 있다. column은 각각의 dtype을 가진다.
+: 2차원 데이터 구조. *행(row)과 열(column)*로 구성되어 있다. column은 각각의 dtype을 가진다.
 
 #### 생성
 
-- list를 통한 생성
+- **list**를 통한 생성
 ```python
 pd.DataFrame([[1, 2, 3],
               [4, 5, 6], 
               [7, 8, 9]], columns=['가', '나', '다'])
 # columns 값을 지정하지 않을 경우 숫자 index로 생성된다.
 ```
-![pandas_DataFrame](../assets/pandas_dataFrame.JPG)
+![pandas_DataFrame_list](../assets/pandas_DataFrame_list.JPG)
 
+- **dictionary**를 통한 생성
+*key* 값이 자동으로 *column* 명으로 지정된다.
+```python
+data = {
+    'name': ['kim', 'Lee', 'Park'],
+    'age': [24, 27, 34]
+    'children': [2, 1, 3]
+}
+```
+![pandas_DataFrame_dict](../assets/pandas_DataFrame_dict.JPG)
+ 
 #### 속성
-
+DataFrame은 다음의 **속성**을 가진다.
+- **index**: index (기본 값으로 RangeIndex)
+- **columns**: column 명
+- **values**: numpy array형식의 데이터 값
+- **dtypes**: column 별 데이터 타입
+- **T**: DataFrame을 전치(Treanpose)
 
 #### index 지정
+```python
+df.index = list('abc')
+# DataFrame의 index를 a, b, c로 지정할 수 있다.
+ ```
 
 #### column
+DataFrame의 key값으로 column의 이름을 지정하여 column을 선택할 수 있다. 
+
+- column 지정
+1개의 column은 Seires로 가져온다. 2개 이상의 column을 선택하려면 fancy indexing으로 가능하다.
+```python
+df['column1']
+df[['column1', 'colnumn2']]
+```
+- rename
+```python
+df.rename(colums={'before_name': 'after_name'})
+
+# inplace=True 옵션으로 변경사항을 바로 적용할 수 있다.
+df.rename(colums={'before_name': 'after_name'})
+```
+- axis
+(index number를 포함한)축을 지정한다.
+```python
+# DataFrame의 index를 알파벳으로 rename하는 코드
+df = df.rename(({'a':'z'}, axis=0))
+```
 
 #### 연습문제
 
