@@ -150,6 +150,3 @@ df.rename(colums={'before_name': 'after_name'})
 # DataFrame의 index를 알파벳으로 rename하는 코드
 df = df.rename(({'a':'z'}, axis=0))
 ```
-
-#### 연습문제
-
